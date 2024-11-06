@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/code.js"></script>
 </head>
 <body>
     <section class="main">
@@ -55,7 +56,24 @@
                     </div>
                     <div class="button_information">
                         <button id="openPopup">Оставить заявку</button>
-                    </div>
+                      </div>
+                    
+                      <div class="popup" id="popup">
+                        <span class="close-button" onclick="closePopup()">&times;</span>
+                        <h2>Ура, вы отправили заявку!</h2>
+                      </div>
+                    
+                      <script>
+                        function openPopup() {
+                          document.getElementById("popup").style.display = "block";
+                        }
+                    
+                        function closePopup() {
+                          document.getElementById("popup").style.display = "none";
+                        }
+                    
+                        document.getElementById("openPopup").addEventListener("click", openPopup);
+                      </script>
                     <div class="buttom_information">
                         <p>Нажимая на кнопку, вы соглашаетесь c нашей политикой конфиденциальности</p>
                     </div>
