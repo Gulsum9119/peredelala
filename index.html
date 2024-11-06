@@ -55,33 +55,13 @@
                         <input type="tel" placeholder="Номер">
                     </div>
                     <div class="button_information">
-                        <button id="openPopup">Оставить заявку</button>
+                        <button id="openPopup">
+                            <a href="application.html"> Оставить заявку</a>
+                           
+
+                        </button>
                       </div>
                     
-                      <div class="popup" id="popup">
-                        <span class="close-button" onclick="closePopup()">&times;</span>
-                        <h2>Ура, вы отправили заявку!</h2>
-                      </div>
-                    
-                      <script>
-                        function openPopup() {
-                          document.getElementById("popup").style.display = "block";
-                        }
-                    
-                        function closePopup() {
-                          document.getElementById("popup").style.display = "none";
-                        }
-                    
-                        document.getElementById("openPopup").addEventListener("click", openPopup);
-                      </script>
-                    <div class="buttom_information">
-                        <p>Нажимая на кнопку, вы соглашаетесь c нашей политикой конфиденциальности</p>
-                    </div>
-                    <div id="popup">
-                        <h2>Вы оставили заявку!</h2>
-                        <p>Спасибо за интерес! Мы свяжемся с вами в ближайшее время.</p>
-                        <button id="closePopup">Закрыть</button>
-                      </div>
                      
                 </div>
             </div>
