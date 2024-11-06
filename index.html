@@ -54,14 +54,33 @@
                         <input type="text" placeholder="Фамилия">
                         <input type="tel" placeholder="Номер">
                     </div>
-                    <div class="button_information">
+                    <!---<div class="button_information">
                         <button id="openPopup">
                             <a href="application.html"> Оставить заявку</a>
                            
 
                         </button>
+                      </div>---->
+                      <div class="button_information">
+                        <button id="openPopup">Оставить заявку</button>
                       </div>
                     
+                      <div class="popup" id="popup">
+                        <span class="close-button" onclick="closePopup()">&times;</span>
+                        <h2>Ура, вы отправили заявку!</h2>
+                      </div>
+                    
+                      <script>
+                        function openPopup() {
+                          document.getElementById("popup").style.display = "block";
+                        }
+                    
+                        function closePopup() {
+                          document.getElementById("popup").style.display = "none";
+                        }
+                    
+                        document.getElementById("openPopup").addEventListener("click", openPopup);
+                      </script>
                      
                 </div>
             </div>
