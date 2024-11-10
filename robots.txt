@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://gulsum9119.github.io/peredelala/
+Disallow: /admin/
