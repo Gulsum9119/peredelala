@@ -1,3 +1,4 @@
 User-agent: *
-Allow:/
+Allow: /
+Sitemap: https://gulsum9119.github.io/peredelala/FasterUI/sitemap.xml
 
